@@ -1,9 +1,10 @@
 pub mod d1;
+pub mod d2;
 
 fn main() {
-    let most_cals = d1::find_most_calories();
-    println!("Elf carrying the most calories: {}", most_cals);
+    d1::find_most_calories();
+    d1::total_top_three();
 
-    let total_top_three_cals = d1::total_top_three();
-    println!("Total of top three elves: {}", total_top_three_cals);
+    d2::calculate_score();
+    d2::calculate_score_part_two();
 }

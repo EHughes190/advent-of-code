@@ -35,7 +35,7 @@ fn get_total_cals(elf: &str) -> u32 {
 
 //part 1
 
-pub fn find_most_calories() -> u32 {
+pub fn find_most_calories() {
     let elves: Vec<&str> = get_input().split("\n\n").collect();
     let mut most_cals = 0;
 
@@ -47,10 +47,11 @@ pub fn find_most_calories() -> u32 {
         }
     }
 
-    most_cals
+    println!("Most calories: {}", most_cals);
 }
 
-pub fn total_top_three() -> u32 {
+// part 2
+pub fn total_top_three() {
     let mut elf_cal_totals: Vec<u32> = Vec::new();
     let elves: Vec<&str> = get_input().split("\n\n").collect();
     let mut most_cals = 0;
@@ -64,5 +65,5 @@ pub fn total_top_three() -> u32 {
 
     most_cals += elf_cal_totals[0] + elf_cal_totals[1] + elf_cal_totals[2];
 
-    most_cals
+    println!("Top three calories: {}", most_cals);
 }
