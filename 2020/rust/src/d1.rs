@@ -1,10 +1,10 @@
 fn get_input() -> &'static str {
     "1721
-    979
-    366
-    299
-    675
-    1456"
+979
+366
+299
+675
+1456"
 }
 
 fn parse_input(input: &str) -> Vec<u32> {
